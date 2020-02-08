@@ -160,19 +160,53 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-@bg-c #F6F6F6;
-.container nav {
+nav {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 100%;
   margin: auto;
+  background: #F6F6F6;
+  color: #454A59;
+  border: #F1F1F1;
 }
-.container nav .logo {
-  margin: auto;
+nav .logo {
+  margin: 1% auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
-.container nav .navlinks {
+nav .logo h1 {
+  font-size: 4.2em;
+}
+nav .navlinks {
   margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 1% auto;
+}
+nav .navlinks a {
+  text-decoration: none;
+  color: #454A59;
+  font-weight: 800;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+  }
+  nav .logo {
+    width: 100%;
+  }
+  nav .logo h1 {
+    font-size: 3em;
+  }
+  nav .navlinks {
+    width: 100%;
+  }
+  nav .navlinks a {
+    font-size: 1.2em;
+  }
 }
 footer {
   color: #22283B;
@@ -184,11 +218,16 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro h2 {
-  padding: 15px;
+.home .intro img {
+  border-radius: 5px;
 }
-.home .intro p {
-  padding: 0 15px;
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+  }
+}
+.home .intro .intro-text {
+  padding: 15px;
 }
 .home .space-images {
   display: flex;
@@ -200,6 +239,17 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -217,6 +267,11 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -230,7 +285,12 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+  }
+}
+.home .walk img {
   width: 100%;
   height: auto;
   border-radius: 10px;
