@@ -160,6 +160,20 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@bg-c #F6F6F6;
+.container nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+.container nav .logo {
+  margin: auto;
+}
+.container nav .navlinks {
+  margin: auto;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
